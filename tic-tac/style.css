@@ -1,0 +1,14 @@
+div.col-md-4 div{
+    padding: 8px 20px;
+    /* margin: auto; */
+}
+
+div.col-md-4 div a{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #555;
+    border-radius: 10px;
+}
