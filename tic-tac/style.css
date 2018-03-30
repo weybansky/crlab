@@ -4,9 +4,36 @@ body{
     font-family: 'Permanent Marker', cursive;
 }
 
-div.col-md-4 div{
+div.col-md-4 div#cover{
+    position: relative;
+}
+
+div.col-md-4 div#cover div.cover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* right: 100px; */
+    width: 230px;;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(51, 51, 51, 0.88);
+}
+
+div.col-md-4 div#cover div.cover span{
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+    padding-top: 100px;
+    margin: auto auto;
+    /* vertical-align: middle; */
+    display: block;
+    text-align: center;
+}
+
+div.col-md-4 div#cover div.row_one,
+div.col-md-4 div#cover div.row_two,
+div.col-md-4 div#cover div.row_three{
     padding: 8px 20px;
-    /* margin: auto; */
 }
 
 div.col-md-4 div a{
