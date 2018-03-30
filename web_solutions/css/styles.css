@@ -1,0 +1,356 @@
+/*Global Styling*/
+h3.text{
+	color: #31C229;
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 26px;
+}
+
+
+/*Navigation => main-menu*/
+nav.main-menu{
+	background-color: #31C229;
+	padding: 1px;
+}
+
+nav.main-menu a#sitename{
+	font-weight: bold;
+	font-size: 26px;
+	color: #fff;
+	display: block;
+	padding: 5px 0px;
+}
+
+nav.main-menu a#sitename span{
+	color: #337ab7;
+}
+
+nav.main-menu a#sitename:hover{
+	text-decoration: none;
+}
+
+nav.main-menu ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+nav.main-menu ul li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px;
+}
+
+nav.main-menu ul li a{
+	color: #fff;
+	display: block;
+	font-size: 15px;
+	padding: 10px 10px;
+}
+
+nav.main-menu ul li a:hover{
+	background-color: #fff;
+	color: #31C229;
+	text-decoration: none;
+}
+
+/*Home Page*/
+/*section Jumbotrom*/
+section.jumbotron{
+	margin-bottom: 0px;
+	min-height: 400px;
+	/*background-image: url('../img/background1.jpg');*/
+	background-image: url('../img/development.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+section.jumbotron h1{
+	color: #31C229;
+	font-weight: bolder;
+	font-size: 72px;
+	font-family: monospace;
+}
+
+section.jumbotron p{
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+section.jumbotron p i.fa-circle{
+	font-size: 6px;
+	vertical-align: middle;
+	color: #afa;
+}
+
+section.jumbotron p a.btn{
+	background-color: rgba(255, 255, 255, 0);
+	color: #fff;
+	border-radius: 20px;
+	border: 1px solid #31C229;
+}
+
+section.jumbotron p a.btn:hover{
+	background-color: #31C229;
+}
+
+
+
+/*Services*/
+section.services{
+	padding-bottom: 15px;
+}
+
+section.services div.row div.well:hover{
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px;
+}
+
+section.services i{
+	color: #31C229;
+}
+
+section.services div.img{
+	height: 180px;
+	overflow: hidden;
+}
+
+section.services div.img:hover{
+	opacity: 0.8;
+}
+
+
+/*Testimonies*/
+section.testimonies{
+	margin-bottom: 100px;
+}
+
+
+
+/*bottom lins*/
+section.bottom-links{
+	background-color: #363636;
+	color: #eee;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+
+section.bottom-links #col1 ul{
+	padding: 0px;
+}
+
+section.bottom-links #col1 ul li{
+	padding: 5px 2px;
+	list-style-type: none;
+}
+
+section.bottom-links #col1 ul a{
+	text-decoration: none;
+	color: #ddd;
+}
+
+section.bottom-links #col1 ul a:hover{
+	text-decoration: none;
+	color: #31C229;
+}
+
+
+
+
+
+section.bottom-links #col2 h4.text{
+	font-size: 20px;
+}
+
+section.bottom-links #col2 p.address{
+	border-left: 2px solid #ddd;
+	padding-left: 5px;
+	font-style: italic;
+}
+
+section.bottom-links #col2 ul{
+	padding: 0px;
+}
+
+section.bottom-links #col2 ul li{
+	padding: 5px 2px;
+	list-style-type: none;
+}
+
+section.bottom-links #col2 ul a{
+	text-decoration: none;
+	color: #ddd;
+}
+
+section.bottom-links #col2 ul a:hover{
+	text-decoration: none;
+	color: #ddd;
+}
+
+section.bottom-links #col2 ul i{
+	font-size: 18px;
+	padding-right: 10px;
+}
+
+
+
+
+
+section.bottom-links form p{
+	font-size: 20px;
+}
+
+section.bottom-links form input:focus,
+section.bottom-links form textarea:focus{
+	border-color: #31C229;
+}
+
+
+
+
+/*Footer*/
+footer{
+	background-color: #262626;
+	color: #eee;
+}
+
+footer p{
+	padding: 20px 5px;
+	margin: 0px;
+}
+
+
+
+/*About Page*/
+section.about p{
+	padding: 15px 25px;
+	padding-top: 5px;
+}
+
+section.about p:hover{
+	background-color: #eee;
+}
+
+
+/*Contact*/
+section.contact-us{
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.contact-us input:focus,
+section.contact-us textarea:focus{
+	border-color: #31C229 !important;
+}
+
+section.contact-us input[type=checkbox]{
+	margin-left: 10px;
+}
+
+section.contact-us button{
+	border: 1px solid #31C229;
+	border-radius: 20px;
+	padding: 8px 15px;
+	background-color: #fff;
+}
+
+section.contact-us button:hover{
+	background: #31C229;
+	color: #fff;
+}
+
+
+
+/*blog*/
+section.posts{
+	padding: 30px 0px;
+}
+
+section.posts h3.title{
+	margin-top: 0px;
+	color: #31C229;
+}
+
+section.posts a{
+	color: #31C229;
+}
+
+section.posts div.post{
+	padding: 20px 5px;
+	margin-bottom: 20px;
+}
+
+section.posts div.post:hover{
+	background-color: #eee;
+}
+
+section.posts div.single-post:hover{
+	background-color: #fff !important;
+}
+
+section.posts div.single-post h3.title{
+	padding-top: 20px;
+	font-size: 30px; 
+}
+
+@media (max-width: 991px) {
+	section.services div.img{
+		height: 120px;
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 768px) {
+	nav.main-menu a#sitename,
+	nav.main-menu ul{
+		text-align: center;
+		padding-bottom: 2px;
+	}
+
+	nav.main-menu ul li a{
+		font-size: 14px;
+		padding: 8px 5px;
+	}
+
+	section.jumbotron{
+		background-size: cover;
+		min-height: 260px;
+		background-image: url('../img/background.jpg');
+	}
+
+	section.jumbotron h1{
+		font-size: 44px;
+		margin-top: 10px;
+	}
+
+	section.jumbotron p{
+		color: #bbb;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	section.jumbotron p a.btn{
+		color: #31C229;
+		font-weight: bold;
+	}
+
+	section.services div.img{
+		height: auto;
+	}
+	
+	section.bottom-links #col1,
+	section.bottom-links #col2{
+		padding-left: 25px;
+	}
+	
+	section.posts{
+		padding: 10px 0px;
+	}
+
+	section.posts h3.title{
+		margin-top: 7px;
+	}
+	
+}

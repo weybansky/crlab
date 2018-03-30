@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Regex Expression</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+	<style>
+		body{
+			background: #3a3a3a;
+		}
+
+		label{
+			color: #fff;
+		}
+
+		p.help-block{
+			color: #ddd;
+			font-size: 14px;
+		}
+
+		input{
+			color: #333;
+		}
+		
+		div.row{
+			margin-top: 100px;
+		}
+	</style>
+
+	<script>
+		function validate_email() {
+			var email_addr = document.getElementById('email').value;
+			// var regex = /^[a-zA-Z\_\-\.0-9]{1,}\@[a-zA-Z\_\-\.0-9]\.([a-zA-Z]{2-4})$/;
+			var regex = /^([a-zA-Z0-9-\._]){1,20}\@([a-zA-Z0-9-\._]){1,20}(\.([a-zA-Z]){2,4})$/;
+
+			// document.getElementById('error_email').innerHTML = regex.test(email_addr);
+
+			if (regex.test(email_addr) == false) {
+				document.getElementById('email').style.boxShadow = "1px 1px 10px red, -1px -1px 3px red";
+				document.getElementById('error_email').style.color = "red";
+				document.getElementById('error_email').innerHTML = '<i class="fas fa-times fa-2x"></i>';
+			} else {
+				document.getElementById('email').style.boxShadow = "1px 1px 10px green, -1px -1px 3px green";
+				document.getElementById('error_email').style.color = "green";
+				document.getElementById('error_email').innerHTML = '<i class="fas fa-check fa-2x"></i>';
+			}
+		}
+
+		function validate_password() {
+			var password = document.getElementById('password').value;
+
+			var regex = /([a-zA-Z0-9-\._]){1,20}/;
+
+			document.getElementById('error_password').innerHTML = regex.test(error_password);
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<form action="" method="" onsubmit="">
+					<div class="form-group">
+						<label for="">First Name:</label>
+						<input type="text" id="fname" placeholder="John" class="form-control">
+						<p id="error_fname" class="help-block">
+							
+						</p>
+					</div>
+
+					<div class="form-group">
+						<label for="">Last Name:</label>
+						<input type="text" id="lname" placeholder="Doe" class="form-control">
+						<p id="error_lname" class="help-block">
+							
+						</p>
+					</div>
+
+					<div class="form-group">
+						<label for="">Email:</label>
+						<input onkeydown="validate_email()" onkeyup="validate_email()" type="text" id="email" placeholder="example#example.com" class="form-control">
+						<p id="error_email" class="help-block">
+							
+						</p>
+					</div>
+
+					<div class="form-group">
+						<label for="">Password:</label>
+						<input onkeydown="validate_password()" onkeyup="validate_password()" type="text" id="password" placeholder="**********" class="form-control">
+						<p id="error_password" class="help-block">
+							Password must contain Uppercase and Lowercase letters, numbers
+						</p>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary form-control">Create Account</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

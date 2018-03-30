@@ -1,0 +1,32 @@
+All Valid Firstnames in Unicode-- will have alphabets, spaces, apostrophe and hyphens
+Abdulwahab Nasir
+all unicode characters
+
+
+All Possible street addresses with zip codes and postal codes
+House 5, OAU staff-quaters. Ile-ife. 220282
+[a-zA-Z\d.,-]
+
+
+All possible SQL SELECT STATEMENT
+SLECT
+FROM
+WHERE
+DISTINCT
+GROUP
+HAVING
+ORDER
+AS
+
+=> starts with a SELECT, ends with ;, can  contain (), _,
+
+
+All Language syntax in XML  <[a-z /]+>
+(<[a-z/]*>)
+
+<xml>vhjdvd</html>
+
+<xml date="">
+
+<[a-z]* />
+<br/>

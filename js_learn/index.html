@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+		h3, label{
+			color: white;
+		}
+	</style>
+
+	<script>
+		function add () {
+			var a = document.getElementById('input1').value;
+			var b = document.getElementById('input2').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			}
+			else if (b === "") {
+				window.alert('Please Enter a value for Input 2');
+				return false;
+			}
+			else{
+				a = Number(a);
+				b = Number(b);
+				document.getElementById('ans').value = a + b;
+			}
+		}
+
+		function sub () {
+			var a = document.getElementById('input1').value;
+			var b = document.getElementById('input2').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			}
+			else if (b === "") {
+				window.alert('Please Enter a value for Input 2');
+				return false;
+			}
+			else{
+				a = Number(a);
+				b = Number(b);
+				document.getElementById('ans').value = a - b;
+			}
+		}
+
+		function mult () {
+			var a = document.getElementById('input1').value;
+			var b = document.getElementById('input2').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			}
+			else if (b === "") {
+				window.alert('Please Enter a value for Input 2');
+				return false;
+			}
+			else{
+				a = Number(a);
+				b = Number(b);
+				document.getElementById('ans').value = a * b;
+			}
+		}
+
+		function divide () {
+			var a = document.getElementById('input1').value;
+			var b = document.getElementById('input2').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			}
+			else if (b === "") {
+				window.alert('Please Enter a value for Input 2');
+				return false;
+			}
+			else{
+				a = Number(a);
+				b = Number(b);
+				document.getElementById('ans').value = a / b;
+			}
+		}
+
+		function sqrt () {
+			var a = document.getElementById('input1').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			}
+			else{
+				a = Number(a);
+				document.getElementById('ans').value = Math.sqrt(a);
+			}
+		}
+
+		function sqr () {
+			var a = document.getElementById('input1').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			}
+			else{
+				a = Number(a);
+				if ((a / -a) === 1){
+					window.alert('You cannot calculate the Square root of a Negative Number');
+				}else{
+					document.getElementById('ans').value = Math.pow(a, 2);
+				}
+			}
+		}
+
+		function quad() {
+			var a = document.getElementById('input1').value;
+			var b = document.getElementById('input2').value;
+			var c = document.getElementById('input3').value;
+			// ax^2 + bx + c = 0
+			var x1 = 0;
+			var x2 = 0;
+			
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			}
+			else if (b === "") {
+				window.alert('Please Enter a value for Input 2');
+				return false;
+			}
+			else if (c === "") {
+				window.alert('Please Enter a value for Input 3');
+				return false;
+			}
+			else {
+				a = Number(a);
+				b = Number(b);
+				c = Number(c);
+				x1 = (-b + Math.sqrt( (b*b) - (4*a*c) )) / (2*a);
+				x2 = (-b - Math.sqrt( (b*b) - (4*a*c) )) / (2*a);
+
+				document.getElementById('ans').value = "x1 = " + x1 + "  x2 = " + x2;				
+			}
+		}
+		
+		function sin () {
+			var a = document.getElementById('input1').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			} else{
+				a = Number(a);
+				document.getElementById('ans').value = (Math.sin(a * Math.PI / 180));
+			}
+		}
+
+		function cos () {
+			var a = document.getElementById('input1').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			} else{
+				a = Number(a);
+				document.getElementById('ans').value = (Math.cos(a * Math.PI / 180));
+			}
+		}
+
+		function tan () {
+			var a = document.getElementById('input1').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			} else{
+				a = Number(a);
+				document.getElementById('ans').value = (Math.sin(a * Math.PI / 180)) / (Math.cos(a * Math.PI / 180));
+			}
+		}
+
+		function log () {
+			var a = document.getElementById('input1').value;
+
+			if (a === "") {
+				window.alert('Please Enter a value for Input 1');
+				return false;
+			} else{
+				a = Number(a);
+				document.getElementById('ans').value = Math.log(a);
+			}
+		}
+
+
+	</script>
+</head>
+<body style="background-color: #333;" onload="afterPageLoad()">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<h3 class="text-center">Mini Calculator</h3>
+				<form action="" class="">
+					<div class="form-group">
+						<label for="">Input 1</label>
+						<input id="input1" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="">Input 2</label>
+						<input id="input2" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="">Input 3</label>
+						<input id="input3" type="text" class="form-control">
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="">Answer</label>
+						<input id="ans" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<a href="#" onclick="add()" class="btn btn-danger">Add</a>
+						<a href="#" onclick="sub()" class="btn btn-danger">Sutract</a>
+						<a href="#" onclick="mult()" class="btn btn-danger">Multiply</a>
+						<a href="#" onclick="divide()" class="btn btn-danger">Divide</a>
+					</div>
+					<div class="form-group">
+						<a href="#" onclick="quad()" class="btn btn-info">Quadratic</a>
+						<a href="#" onclick="sqr()" class="btn btn-info">Square</a>
+						<a href="#" onclick="sqrt()" class="btn btn-info">Square Root</a>
+					</div>
+
+					<div class="form-group">
+						<!-- Math.sin(90 * Math.PI / 180); -->
+						<!-- Math.cos(0 * Math.PI / 180);  -->
+						<a href="#" onclick="sin()" class="btn btn-warning">sin()</a>
+						<a href="#" onclick="cos()" class="btn btn-warning">cos()</a>
+						<a href="#" onclick="tan()" class="btn btn-warning">tan()</a>
+					</div>
+					<div class="form-group">
+						<a href="#" onclick="log()" class="btn btn-success">log()</a>
+						
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,29 @@
+section.login{
+	padding: 20px 0px;
+}
+
+section.login form p{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+section.login form div.form-group{
+	margin-bottom: 30px;
+}
+
+section.login form div.form-group input{
+	height: 45px;
+	
+}
+
+section.login form div.form-group input:focus{
+	border-color: #29af8a;
+	outline-color: #29af8a;
+	height: 48px;
+}
+
+section.login form div.form-group button{
+	background-color: #29af8a;
+	color: #fff;
+	padding: 15px 20px;
+}

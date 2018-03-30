@@ -1,0 +1,14 @@
+section.faq{
+	padding: 20px 0px;
+}
+
+section.faq div.category{
+	background-color: #29af8a;
+}
+
+section.faq div.category h3{
+	margin: 0;
+	padding: 25px 10px;
+	color: #fff;
+	font-size: 20px;
+}
